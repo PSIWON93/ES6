@@ -1,10 +1,9 @@
-//컨스트럭터의 상속방식
+//6.컨스트럭터의 상속
 
 function Person(name, first, second) {
   this.name = name;
   this.first = first;
   this.second = second;
-
 }
 
 Person.prototype.sum = function(){
@@ -18,7 +17,7 @@ function PersonPlus (name, first, second, third) {
 }
 
 //* __proto__ vs Object.create(object) 차이점 
-// __proto__ 는 비표준 아래대로 실행하면 park.constructor는 PersonPlus 생성자 리플레이스 하지않음 
+// __proto__ 는 아래대로 실행하면 park.constructor는 PersonPlus 생성자 리플레이스 하지않음 
 //PersonPlus.prototype.__proto__ = Person.prototype; 
 
 //아래대로만 실행하면 park.constructor는 Person, Person가 PersonPlus의 생성자로 리플레이스됨 

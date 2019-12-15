@@ -1,4 +1,4 @@
-//JS의 ES6 기본클래스 형식
+//3.JS의 ES6 기본클래스 형식과 상속
 
 class Person{
   constructor(name, first, second){

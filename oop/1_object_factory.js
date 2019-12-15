@@ -1,3 +1,6 @@
+//1.기본개념 : 객체는 왜 필요한가? 우리는 왜 객체지향방식으로 개발을 해야하는가 
+//객체의 변수명, 메소드를 변경할때 비합리적임. OOP는 객체를 찍어내는 공장이다. 가 OOP 수업의 키포인트. 
+
 var kim = {
   name: 'kim',
   first: 10,
@@ -19,13 +22,9 @@ var lee = {
 console.log('kim.sum() :', kim.sum());
 console.log('lee.sum() :', lee.sum());
 
-// 안의 내용을 변경할때 비합리적임 
-// 객체를 찍어내는 공장! 틀을 변경하기 
-
 var d1 = new Date('2019-4-10');
 console.log("d1.getFullYear() : ", d1.getFullYear());
 
-//객체에서 변수를 정의하는 것과 함수에서의 변수 초기화 다름. 혼돈하지 말 것 
 function Person(){
   this.name = 'park';
   this.first = 10;
@@ -38,6 +37,4 @@ function Person(){
 
 console.log('Person() :', Person());
 
-//Person 안에있는 값으로 새 객체를 만들게 됨 
-//constructor 생성자 함수 
 console.log('new Person() :', new Person());

@@ -1,12 +1,16 @@
+//5.프로토타입의 상속
+
 var superObj = {superVal:'super'}
 //var subObj = {subVal:'sub'}
-//subObj는 superObj의 자식 
+
+//subObj가 superObj의 프로토타입이 되도록 선언한다.
 //subObj.__proto__ = superObj;
 
-//오브젝트에 superObj를 부모로하는 객체를 만들기 
-// __proto__ 보다 아래의 방식으로 __proto__ 프로토링크를 만드는 방식이 좋다. 
+//superObj를 부모로하는 객체 만들기 
+// __proto__는 비표준이므로 아래의 방식으로 프로토링크를 만드는 방식이 좋다. 
 var subObj = Object.create(superObj);
 subObj.subVal = 'sub';
+
 console.log('subObj.subVal =>', subObj.subVal);
 console.log('subObj.superVal =>', subObj.superVal);
 

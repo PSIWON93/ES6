@@ -1,3 +1,5 @@
+//2.함수 vs 메소드의 차이. this의 유무
+
 var kim = {name: 'kim', first: 10, second: 20}
 var park = {name: 'park', first: 10, second: 10}
 
