@@ -1,20 +1,20 @@
-// //Practice 1 : numbers 각 인덱스의 값에 2를 곱한 수를 doubledNumbers에 넣기 
+//Practice 1 : numbers 각 인덱스의 값에 2를 곱한 수를 doubledNumbers에 넣기 
 
 
-// //map
-// let numbers = [1, 2, 3, 4, 5];
-// let doubledNumbers = [];
+//map
+let numbers = [1, 2, 3, 4, 5];
+let doubledNumbers = [];
 
-// //imperative = mutable ( 기존의 값을 변경하는 방식 ) /   ex) for loop
-// let i = 1;
-// i += 1;
-// i;
+//imperative = mutable ( 기존의 값을 변경하는 방식 ) /   ex) for loop
+let i = 1;
+i += 1;
+i;
 
-// //state is a value of a variable at a moment. 
+//state is a value of a variable at a moment. 상황에 따른 다른 적용(imperative or declarative)을 생각해보기.
 
 
-// //declarative = immutable ( 기존의 값은 냅두고 그저 이용만해서 새로운 배열을 반환)
-// let doubledNumbers = numbers.map(x => x*2);
+//declarative = immutable ( 기존의 값은 냅두고 그저 이용만해서 새로운 배열을 반환)
+let doubledNumbers = numbers.map(x => x*2);
 
 
 
